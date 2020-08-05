@@ -1,0 +1,34 @@
+body,
+html {
+  height: calc(100%);
+}
+
+.pictures {
+  width: 100%;
+  height: calc(100% - 91px);
+  overflow: scroll;
+}
+
+.pictures .container {
+  height: 100%;
+}
+
+.pictures-grid {
+  display: grid;
+  width: 100%;
+  height: calc(100%);
+  grid: auto-flow dense / 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+}
+
+.pictures-grid:empty {
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/ramen.jpg");
+  background-size: contain;
+}
+
+.picture-item {
+  margin: 10px;
+}

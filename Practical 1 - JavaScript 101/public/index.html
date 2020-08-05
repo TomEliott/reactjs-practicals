@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/gsdk.css">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>TP 0</title>
+</head>
+
+<body>
+  <template id="picture-item-template">
+    <div class="thumbnail picture-item">
+      <img class="picture-item-image" alt="image">
+
+      <div class="caption" style="text-align: center;">
+        <button class="btn btn-danger picture-item-delete-button">Delete</button>
+        <button class="btn btn-warning picture-item-modal-button">Update</button>
+      </div>
+    </div>
+  </template>
+
+  <div id="navbar">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">EpiPic</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="navbar-form">
+              <input id="picture-url-input" type="text" size="40" class="form-control" placeholder="Insert a picture URL" />
+            </div>
+          </li>
+          <li>
+            <button id="picture-add-button" class="btn btn-default">Add</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="pictures">
+    <div class="container">
+      <div id="pictures-grid" class="pictures-grid">
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+
+  <!-- Update Modal (Level 5) -->
+  <div id="Update" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <center>
+          <h2>Update a picture</h2>
+        </center>
+      </div>
+      <div class="modal-body">
+        <center>
+          <input id="picture-update-input" type="text" size="40" class="form-horizontal" placeholder="Insert a new picture URL" />
+          <button id="picture-update-button" class="btn btn-primary">Update</button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

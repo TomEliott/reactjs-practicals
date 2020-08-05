@@ -1,0 +1,18 @@
+{
+  "name": "react-101",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Quentin Pré <pre.quentin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
